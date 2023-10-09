@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+  border: 4px solid #515151; 
+}
+.fileStyle{
+  color:white;
+}
+h1 {
+  margin-left: 1em;
+  font-size: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #a53d3d 40%, #1a1a1a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.custom-polygon-style {
+  fill: #FF5733; /* Fill color */
+  stroke: #FF5733; /* Stroke color */
+  stroke-width: 2px; /* Stroke width */
+}
+.div {
+background-color: #101012;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #af4c4c;
+}
+
+.button1:hover {
+  background-color: #000000;
+  color: white;
+}
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+.btn {
+ color:white;
+ text-decoration:none;
+ padding:5px 10px;
+ border-radius:3px;
+ font-family: 'Times new roman', cursive;
+ font-size:1em;
+}
+
+.btn-black {
+   @include button-bg(#4d4d4d);
+}
+.popup-close-button {
+  @include button-bg(#101012)
+}
+.outside-info{
+  
+  margin:auto;
+  height: 3.5em;
+  width: 100%;
+  font-family: 'Poiret One', cursive;
+  background-color: #242424;
+  font-size: 20px;
+  color: #ffffff;
+}
+.wrap {
+  margin:0 auto;
+  width:800px;
+  text-align:center;
+}
+.inputms{
+  background: #121212;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
