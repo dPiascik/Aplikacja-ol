@@ -7,15 +7,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
-    {
-        builder.WithOrigins("https://localhost:3000")
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader();
-    });
+   {
+       builder.WithOrigins("https://localhost:3000")
+           .AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader();
+   });
 });
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DatabaseContext>(options =>
@@ -26,6 +25,11 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<DatabaseContext>();
+    db.Database.Migrate(); // <- tworzy bazę i tabele, jeśli ich brak
+}
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

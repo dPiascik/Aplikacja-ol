@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\razor\\react\\OL-app\\Ol-api\\Ol-api.csproj": {}
+    "C:\\Users\\Damian\\Documents\\Projekt\\ZADANIE\\Aplikacja-ol\\ol-app\\ol-api\\Ol-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\razor\\react\\OL-app\\Ol-api\\Ol-api.csproj": {
+    "C:\\Users\\Damian\\Documents\\Projekt\\ZADANIE\\Aplikacja-ol\\ol-app\\ol-api\\Ol-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\razor\\react\\OL-app\\Ol-api\\Ol-api.csproj",
+        "projectUniqueName": "C:\\Users\\Damian\\Documents\\Projekt\\ZADANIE\\Aplikacja-ol\\ol-app\\ol-api\\Ol-api.csproj",
         "projectName": "Ol-api",
-        "projectPath": "C:\\Users\\razor\\react\\OL-app\\Ol-api\\Ol-api.csproj",
-        "packagesPath": "C:\\Users\\razor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\razor\\react\\OL-app\\Ol-api\\obj\\",
+        "projectPath": "C:\\Users\\Damian\\Documents\\Projekt\\ZADANIE\\Aplikacja-ol\\ol-app\\ol-api\\Ol-api.csproj",
+        "packagesPath": "C:\\Users\\Damian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Damian\\Documents\\Projekt\\ZADANIE\\Aplikacja-ol\\ol-app\\ol-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\razor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Damian\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -34,29 +32,35 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[8.0.11, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[8.0.7, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
@@ -78,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

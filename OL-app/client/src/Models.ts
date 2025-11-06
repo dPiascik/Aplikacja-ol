@@ -1,11 +1,14 @@
 export interface PositionData {
+    id: number;   
     latitude: number,
     longitude: number,
     isInsidePolygon: boolean,
-    exitTime: Date
+    exitTime: string;
 }
 
-export const SendDataToServer = async (body: PositionData) => {
+export type NewPositionData = Omit<PositionData, "id">;
+
+export const SendDataToServer = async (body: NewPositionData) => {
     fetch('https://localhost:7152/api/positiondata', {
         method: 'POST',
         headers: {
